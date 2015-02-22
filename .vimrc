@@ -99,11 +99,11 @@ call yankstack#setup()
 " Make Y behave like D and C
 nmap Y y$
 " Increase font size
-"if has("gui_macvim")
-set guifont=Menlo\ Regular:h12
-"elseif has("gui_gtk2")
-    "set guifont=Droid\ Sans\ Mono\ 11
-"end
+if has("gui_macvim")
+    set guifont=Menlo\ Regular:h12
+elseif has("gui_gtk2")
+    set guifont=Droid\ Sans\ Mono\ 11
+end
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 

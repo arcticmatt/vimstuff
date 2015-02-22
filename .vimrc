@@ -163,7 +163,7 @@ map <D-t> :tabe<CR>
 
 "}}}
 
-"{{{  PLUGINS
+"{{{  PLUGIN SETTINS
 
 " Gundo
 nnoremap <F3> :GundoToggle<CR>
@@ -178,20 +178,10 @@ endif
 " Yankstack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
-" Neocomplcache
-"let g:neocomplcache_enable_at_startup=1
-"let g:neocomplcache_snippets_dir='~/.vim/bundle/snipmate-snippets/snippets'
-"let g:SuperTabDefaultCompletionType="<c-x><c-o>"
 " Solarized
-syntax enable
 let g:solarized_termcolors=256
 colorscheme solarized
 set background=dark
-" Jedi-vim
-let g:jedi#popup_on_dot=0
-autocmd FileType python setlocal completeopt-=preview
-" Powerline
-let g:Powerline_stl_path_style = 'short'
 " Latex-Box
 let g:LatexBox_viewer="open /Applications/Preview.app"
 

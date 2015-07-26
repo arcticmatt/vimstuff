@@ -2,9 +2,12 @@
 
 call plug#begin('~/.vim/plugged')
 
-"Status line
+" Status line
 Plug 'itchyny/lightline.vim'
 
+" Uncomment these two lines if not using YouCompleteMe
+" Plug 'ervandew/supertab'
+" Plug 'vim-scripts/AutoComplPop'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
 Plug 'altercation/vim-colors-solarized'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
